@@ -13,7 +13,6 @@ class Dashboard extends React.Component {
           buttonText="Create"
           onComplete={this.props.dashboardCategoryCreate}/>
 
-        {console.log(this.props.categories)}
         {this.props.categories ?
           this.props.categories.map(category => <CategoryItem
             key={category._id}
