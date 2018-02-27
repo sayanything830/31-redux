@@ -8,9 +8,9 @@ class Dashboard extends React.Component {
   render() {
     return (
       <section>
-        <h1>Name Some Categories</h1>
+        <h1>Fudge-It Budget</h1>
         <CategoryForm
-          buttonText='Create'
+          buttonText="Create"
           onComplete={this.props.dashboardCategoryCreate}/>
 
         {console.log(this.props.categories)}
@@ -18,7 +18,7 @@ class Dashboard extends React.Component {
           this.props.categories.map(category => <CategoryItem
             key={category._id}
             category={category}
-            buttonText='Delete'/>)
+            buttonText="Delete"/>)
           :
           undefined
         }
