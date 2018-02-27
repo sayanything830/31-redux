@@ -14,14 +14,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        {/* <header className="header-content">
-          <h4>Categories</h4>
-          <nav>
-            <ul>
-              <li><Link to='/'>Dashboard</Link></li>
-            </ul>
-          </nav>
-        </header> */}
         <main className="main-content">
           <Provider store={store}>
             <BrowserRouter>
